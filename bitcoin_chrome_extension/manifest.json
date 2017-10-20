@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bitcoin Rate Plugin",
+  "description": "This extension give latest bitcoin rate",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icons/icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+   "content_scripts": [
+    {
+      "css": ["mystyles.css"],
+      "js": ["popup.js"],
+      "matches": ["http://www.google.com/*"]
+    }
+  ]
+}
